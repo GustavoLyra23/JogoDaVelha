@@ -88,7 +88,7 @@ public class JogodaVelha {
 
     //calcula a melhor jogada para o computador
     public static int melhorJogada(int posicao_computador) {
-        if ((matriz[0][0].equals(matriz[0][1])) || matriz[0][1].equals(matriz[0][2])) {
+        if ((matriz[0][0].equals(matriz[0][1])) || matriz[0][1].equals(matriz[0][2]) || matriz[0][0].equals(matriz[0][2])) {
             if (matriz[0][2].equals("3")) {
                 return 3;
             } else if (matriz[0][0].equals("1")) {
@@ -99,7 +99,7 @@ public class JogodaVelha {
 
 
         }
-        if ((matriz[0][0].equals(matriz[1][1])) || matriz[1][1].equals(matriz[2][2])) {
+        if ((matriz[0][0].equals(matriz[1][1])) || matriz[1][1].equals(matriz[2][2]) || matriz[0][0].equals(matriz[2][2])) {
             if (matriz[0][0].equals("1")) {
                 return 1;
             } else if (matriz[1][1].equals("5")) {
@@ -109,7 +109,7 @@ public class JogodaVelha {
             }
 
         }
-        if ((matriz[0][0].equals(matriz[1][0])) || matriz[1][0].equals(matriz[2][0])){
+        if ((matriz[0][0].equals(matriz[1][0])) || matriz[1][0].equals(matriz[2][0]) || matriz[0][0].equals(matriz[2][0]) ) {
             if (matriz[0][0].equals("1")) {
                 return 1;
             } else if (matriz[1][0].equals("4")) {
@@ -119,7 +119,7 @@ public class JogodaVelha {
             }
 
         }
-        if ((matriz[0][2].equals(matriz[1][1])) || matriz[1][1].equals(matriz[2][0])) {
+        if ((matriz[0][2].equals(matriz[1][1])) || matriz[1][1].equals(matriz[2][0]) || matriz[0][2].equals(matriz[2][0])) {
             if (matriz[0][2].equals("3")) {
                 return 3;
             } else if (matriz[1][0].equals("5")) {
@@ -129,7 +129,7 @@ public class JogodaVelha {
             }
 
         }
-        if ((matriz[0][2].equals(matriz[1][2])) || matriz[1][2].equals(matriz[2][2])) {
+        if ((matriz[0][2].equals(matriz[1][2])) || matriz[1][2].equals(matriz[2][2]) || matriz[0][2].equals(matriz[2][2])) {
             if (matriz[0][2].equals("3")) {
                 return 3;
             } else if (matriz[1][2].equals("6")) {
@@ -139,7 +139,9 @@ public class JogodaVelha {
             }
 
         }
-        if ((matriz[0][1].equals(matriz[1][1])) || matriz[1][1].equals(matriz[2][1])) {
+
+
+        if ((matriz[0][1].equals(matriz[1][1])) || matriz[1][1].equals(matriz[2][1]) || matriz[0][1].equals(matriz[2][1])) {
             if (matriz[0][1].equals("2")) {
                 return 2;
             } else if (matriz[1][1].equals("5")) {
@@ -149,17 +151,7 @@ public class JogodaVelha {
             }
 
         }
-        if ((matriz[0][1].equals(matriz[1][1])) || matriz[1][1].equals(matriz[2][1])) {
-            if (matriz[0][1].equals("2")) {
-                return 2;
-            } else if (matriz[1][1].equals("5")) {
-                return 5;
-            } else if (matriz[2][1].equals("8")) {
-                return 8;
-            }
-
-        }
-        if ((matriz[1][0].equals(matriz[1][1])) || matriz[1][1].equals(matriz[1][2])) {
+        if ((matriz[1][0].equals(matriz[1][1])) || matriz[1][1].equals(matriz[1][2]) || matriz[1][0].equals(matriz[1][2])) {
             if (matriz[1][0].equals("4")) {
                 return 4;
             } else if (matriz[1][1].equals("5")) {
@@ -169,7 +161,7 @@ public class JogodaVelha {
             }
 
         }
-        if ((matriz[2][0].equals(matriz[2][1])) || matriz[2][1].equals(matriz[2][2])) {
+        if ((matriz[2][0].equals(matriz[2][1])) || matriz[2][1].equals(matriz[2][2]) || matriz[2][0].equals(matriz[2][2])) {
             if (matriz[2][0].equals("7")) {
                 return 7;
             } else if (matriz[2][1].equals("8")) {
