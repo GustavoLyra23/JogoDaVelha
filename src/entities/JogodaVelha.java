@@ -86,6 +86,7 @@ public class JogodaVelha {
         return false;
     }
 
+    //calcula a melhor jogada para o computador
     public static int melhorJogada(int posicao_computador) {
         if ((matriz[0][0].equals(matriz[0][1])) || matriz[0][1].equals(matriz[0][2])) {
             if (matriz[0][2].equals("3")) {
@@ -108,7 +109,7 @@ public class JogodaVelha {
             }
 
         }
-        if ((matriz[0][0].equals(matriz[1][0])) || matriz[1][0].equals(matriz[2][0])) {
+        if ((matriz[0][0].equals(matriz[1][0])) || matriz[1][0].equals(matriz[2][0])){
             if (matriz[0][0].equals("1")) {
                 return 1;
             } else if (matriz[1][0].equals("4")) {
